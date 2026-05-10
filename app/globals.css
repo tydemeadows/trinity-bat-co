@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:wght@400;500;600;700&family=Yeseva+One&family=Pacifico&display=swap');
+
+:root {
+  --sky: #2ba6dc;
+  --sky-light: #5fc1ea;
+  --sky-deep: #1d8bbf;
+  --red: #d8232a;
+  --red-deep: #a8181d;
+  --cream: #faf3e0;
+  --paper: #f5ead0;
+  --gold: #d6a82e;
+  --gold-deep: #a8801f;
+  --ink: #0e0e0e;
+  --ink-soft: #1f1f1f;
+  --navy: #1a3866;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--sky);
+  color: var(--ink);
+  font-family: 'Roboto Condensed', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-image:
+    radial-gradient(circle at 20% 30%, rgba(216, 35, 42, 0.06) 0%, transparent 25%),
+    radial-gradient(circle at 80% 60%, rgba(214, 168, 46, 0.08) 0%, transparent 25%),
+    radial-gradient(circle at 1.5px 1.5px, rgba(255, 255, 255, 0.18) 1.5px, transparent 0);
+  background-size: 100% 100%, 100% 100%, 22px 22px;
+}
+
+/* Swallowtail ribbon shape */
+.ribbon-banner-clip {
+  clip-path: polygon(4% 0%, 96% 0%, 100% 50%, 96% 100%, 4% 100%, 0% 50%);
+}
+
+/* Custom scrollbar hide for mobile carousel */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Snap scroll utilities for mobile carousel */
+.snap-x-mandatory {
+  scroll-snap-type: x mandatory;
+}
+.snap-center-card {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+}
+
+/* Diagonal stripe pattern */
+.stripe-red-cream {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--red) 0,
+    var(--red) 10px,
+    var(--cream) 10px,
+    var(--cream) 20px
+  );
+}
+
+.stripe-gold-ink {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--gold) 0,
+    var(--gold) 10px,
+    var(--ink) 10px,
+    var(--ink) 20px
+  );
+}
