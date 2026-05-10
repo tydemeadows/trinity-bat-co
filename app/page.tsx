@@ -1,6 +1,7 @@
 import { Header } from '@/app/components/Header';
 import { Ticker } from '@/app/components/Ticker';
 import { Hero } from '@/app/components/Hero';
+import { PlayerProfile } from '@/app/components/PlayerProfile';
 import { TrustStrip } from '@/app/components/TrustStrip';
 import { BatCollection } from '@/app/components/BatCollection';
 import { Footer } from '@/app/components/Footer';
@@ -16,6 +17,7 @@ export default async function HomePage() {
       <Ticker />
       <Header />
       <Hero />
+      <PlayerProfile />
       <TrustStrip />
       <div id="lineup">
         <BatCollection products={products} />

@@ -1,14 +1,22 @@
 'use client';
 
 import { useRef, useState, useEffect } from 'react';
+import type { ComponentType } from 'react';
 import type { Product } from '@/app/data/products';
 import { BatCard } from './BatCard';
 
-type Props = {
-  products: Product[];
+export type BatCardComponentProps = {
+  product: Product;
+  position: number;
 };
 
-export function BatCollection({ products }: Props) {
+type Props = {
+  products: Product[];
+  CardComponent?: ComponentType<BatCardComponentProps>;
+};
+
+export function BatCollection({ products, CardComponent }: Props) {
+  const Card = CardComponent ?? BatCard;
   const scrollerRef = useRef<HTMLDivElement>(null);
   const [activeIdx, setActiveIdx] = useState(0);
 
@@ -62,7 +70,7 @@ export function BatCollection({ products }: Props) {
             - hidden on mobile (carousel takes over) */}
         <div className="hidden grid-cols-2 gap-5 md:grid lg:grid-cols-4 lg:gap-6">
           {products.map((product, idx) => (
-            <BatCard key={product.id} product={product} position={idx} />
+            <Card key={product.id} product={product} position={idx} />
           ))}
         </div>
 
@@ -77,7 +85,7 @@ export function BatCollection({ products }: Props) {
                 key={product.id}
                 className="snap-center-card w-[78%] flex-shrink-0 first:ml-2 last:mr-2"
               >
-                <BatCard product={product} position={idx} />
+                <Card product={product} position={idx} />
               </div>
             ))}
           </div>
