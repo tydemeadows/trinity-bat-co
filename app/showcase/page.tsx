@@ -6,7 +6,7 @@ import { Footer } from '@/app/components/Footer';
 
 type VariantLink = {
   name: string;
-  route: '/' | '/lineup-modern' | '/lineup-rugged' | '/lineup-refined';
+  route: '/lineup-90' | '/lineup-modern' | '/lineup-rugged-home' | '/lineup-refined';
   blurb: string;
   imageSrc: string;
   imageAlt: string;
@@ -15,7 +15,7 @@ type VariantLink = {
 const variants: VariantLink[] = [
   {
     name: '90s Fleer Classic',
-    route: '/',
+    route: '/lineup-90',
     blurb: 'Original home route with bold retro card styling.',
     imageSrc: '/pro-select-27-1.png',
     imageAlt: '90s Fleer variant preview',
@@ -29,7 +29,7 @@ const variants: VariantLink[] = [
   },
   {
     name: 'Rugged Workshop',
-    route: '/lineup-rugged',
+    route: '/lineup-rugged-home',
     blurb: 'Heritage textures with a craft-shop tone and utility feel.',
     imageSrc: '/pro-model-bs165.png',
     imageAlt: 'Rugged variant preview',
