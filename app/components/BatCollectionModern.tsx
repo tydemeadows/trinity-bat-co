@@ -23,8 +23,8 @@ export function BatCollectionModern({ products }: Props) {
         </div>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
-          {products.map((product) => (
-            <BatCardModern key={product.id} product={product} />
+          {products.map((product, idx) => (
+            <BatCardModern key={product.id} product={product} position={idx} />
           ))}
         </div>
       </div>
