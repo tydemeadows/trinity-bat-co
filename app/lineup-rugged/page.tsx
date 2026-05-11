@@ -38,10 +38,10 @@ export default function LineupRuggedPage() {
       <div className={styles.announce}>EST. 2010 <span>★</span> Free Shipping Over $300 <span>★</span> Hand Crafted in the USA</div>
 
       <header className={styles.header}>
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <div className={styles.logoMark}>T</div>
           Trinity Bat Co.
-        </div>
+        </Link>
         <nav className={styles.nav}>
           <a href="#">Bats</a>
           <a href="#">Custom</a>

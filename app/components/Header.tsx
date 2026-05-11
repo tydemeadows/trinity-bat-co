@@ -10,7 +10,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 flex items-center justify-between border-b-4 border-ink bg-cream px-4 py-3 shadow-[0_4px_0_#d6a82e] md:px-6 md:py-3.5">
       {/* Logo */}
-      <div className="flex items-center gap-3">
+      <a href="/" className="flex items-center gap-3 transition hover:opacity-80">
         <div className="flex h-10 w-10 items-center justify-center rounded-full border-[3px] border-ink bg-red font-display text-[22px] text-cream shadow-[2px_2px_0_#d6a82e,4px_4px_0_#0e0e0e] md:h-11 md:w-11 md:text-[26px]">
           T
         </div>
@@ -20,7 +20,7 @@ export function Header() {
             BAT CO. · EST. 2010
           </span>
         </div>
-      </div>
+      </a>
 
       {/* Desktop Nav */}
       <nav className="hidden gap-1 font-display text-sm tracking-[0.08em] md:flex">

@@ -30,10 +30,10 @@ export default async function RuggedLandingPage() {
       <div className={styles.announce}>EST. 2010 <span>★</span> Heritage Craft <span>★</span> Hand Crafted in the USA</div>
 
       <header className={styles.header}>
-        <div className={styles.logo}>
+        <Link href="/" className={styles.logo}>
           <div className={styles.logoMark}>T</div>
           Trinity Bat Co.
-        </div>
+        </Link>
         <nav className={styles.nav}>
           <a href="#lineup">Lineup</a>
           <a href="#craft">Craft</a>
