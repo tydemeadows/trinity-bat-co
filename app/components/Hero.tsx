@@ -9,9 +9,9 @@ export function Hero() {
       <div className="mx-auto grid max-w-7xl items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-16">
         {/* Copy block */}
         <div className="order-1 text-center lg:order-1 lg:text-left">
-          <div className="mb-5 inline-flex items-center gap-2 border-[3px] border-ink bg-gold px-3.5 py-1.5 font-display text-[12px] tracking-[0.18em] text-ink shadow-hard">
+          <div className="mb-5 inline-flex items-center gap-2 border-[3px] border-ink bg-gold px-3.5 py-1.5 font-display text-[24px] font-bold tracking-[0.18em] text-ink shadow-hard">
             <span className="text-red">★</span>
-            HAND CRAFTED. HEAVEN SENT.
+            DESIGNED WITH PURPOSE. BUILT FOR IMPACT.
             <span className="text-red">★</span>
           </div>
 

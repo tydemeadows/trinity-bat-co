@@ -191,6 +191,43 @@ export default function LineupRuggedPage() {
         </div>
       </section>
 
+      <section className={styles.playerProfileSection}>
+        <div className={styles.playerProfileInner}>
+          <div className={styles.playerProfileImageCard}>
+            <div className={styles.playerProfileImageWrap}>
+              <Image
+                src="/player-adrain.jpg"
+                alt="Adrian Gonzalez player profile"
+                fill
+                sizes="(max-width: 900px) 100vw, 38vw"
+                className={styles.playerProfileImage}
+              />
+            </div>
+            <div className={styles.playerProfileBadge}>Signature Athlete · No. 23</div>
+          </div>
+
+          <div className={styles.playerProfileContent}>
+            <div className={styles.sectionEyebrowLeft}>Player Profile</div>
+            <h2 className={styles.sectionTitleLeft}>Adrian Gonzalez <em>and the PS 27:1</em></h2>
+            <p className={styles.playerProfileBody}>
+              A hitter known for elite barrel control, Adrian helped shape a profile that
+              stays quick through the zone while keeping enough mass to punish mistakes.
+            </p>
+
+            <div className={styles.playerStatsRow}>
+              <div className={styles.playerStat}><span>5x</span> All-Star</div>
+              <div className={styles.playerStat}><span>2x</span> Gold Glove</div>
+              <div className={styles.playerStat}><span>4x</span> Silver Slugger</div>
+            </div>
+
+            <blockquote className={styles.playerProfileQuote}>
+              "The PS 27:1 is the perfect combination of wood density, balance, and barrel
+              size. It gives you everything you need at the plate."
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
       <section className={styles.profileSection}>
         <div className={styles.sectionHeader}>
           <div className={styles.sectionEyebrow}>Bat Profile</div>

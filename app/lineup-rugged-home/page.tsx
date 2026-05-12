@@ -45,7 +45,7 @@ export default async function RuggedLandingPage() {
       <section className={styles.hero}>
         <div className={styles.heroInner}>
           <div>
-            <p className={styles.kicker}>Rugged Home Landing</p>
+            <p className={`${styles.kicker} ${styles.kickerLarge}`}>DESIGNED WITH PURPOSE. BUILT FOR IMPACT.</p>
             <h1 className={styles.heroTitle}>Workshop-built bats for hitters who earn every swing.</h1>
             <p className={styles.heroBody}>
               The Trinity Select and Pro lines are shaped with heritage profiles,
@@ -74,6 +74,44 @@ export default async function RuggedLandingPage() {
               <p>Balanced profile with medium handle, flared knob, and medium-large barrel authority.</p>
             </div>
           </Link>
+        </div>
+      </section>
+
+      <section className={styles.playerProfileSection}>
+        <div className={styles.playerProfileInner}>
+          <div className={styles.playerProfileCard}>
+            <div className={styles.playerProfileHeader}>
+              <span>Signature Athlete</span>
+              <strong>No. 23</strong>
+            </div>
+            <div className={styles.playerProfileImageWrap}>
+              <Image
+                src="/player-adrain.jpg"
+                alt="Adrian Gonzalez player profile"
+                fill
+                sizes="(max-width: 1050px) 100vw, 36vw"
+                className={styles.playerProfileImage}
+              />
+            </div>
+          </div>
+
+          <div>
+            <p className={styles.sectionEyebrow}>Player Profile</p>
+            <h2 className={styles.sectionTitle}>Adrian Gonzalez and the PS 27:1 standard.</h2>
+            <p className={styles.storyText}>
+              Designed with Adrian Gonzalez, the PS 27:1 profile blends a medium handle,
+              flared knob, and medium-large barrel to keep swings controlled with real finish.
+            </p>
+            <div className={styles.playerStatsRow}>
+              <div><span>5x</span> All-Star</div>
+              <div><span>2x</span> Gold Glove</div>
+              <div><span>4x</span> Silver Slugger</div>
+            </div>
+            <blockquote className={styles.playerQuote}>
+              "The PS 27:1 is the perfect combination of wood density, balance, and barrel
+              size. It gives you everything you need at the plate."
+            </blockquote>
+          </div>
         </div>
       </section>
 

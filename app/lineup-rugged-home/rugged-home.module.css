@@ -113,6 +113,11 @@
   margin-bottom: 14px;
 }
 
+.kickerLarge {
+  font-size: 30px;
+  font-weight: 700;
+}
+
 .heroTitle,
 .sectionTitle {
   font-family: var(--font-bebas), sans-serif;
@@ -211,6 +216,96 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 74px 24px;
+}
+
+.playerProfileSection {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 10px 24px 34px;
+}
+
+.playerProfileInner {
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.playerProfileCard {
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 8px 8px 0 var(--line);
+  color: var(--ink);
+}
+
+.playerProfileHeader {
+  border-bottom: 2px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper);
+  padding: 10px 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-bebas), sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 12px;
+}
+
+.playerProfileHeader strong {
+  color: var(--brass);
+  font-size: 16px;
+  font-family: var(--font-old-standard), serif;
+  font-style: italic;
+}
+
+.playerProfileImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  background: linear-gradient(160deg, #2a2119 0%, #3c2d1f 100%);
+}
+
+.playerProfileImage {
+  object-fit: contain;
+  padding: 12px;
+}
+
+.playerStatsRow {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.playerStatsRow div {
+  border: 1px solid var(--line-warm);
+  background: var(--canvas-2);
+  padding: 10px;
+  text-align: center;
+  font-family: var(--font-bebas), sans-serif;
+  color: var(--paper);
+  letter-spacing: 0.1em;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.playerStatsRow span {
+  display: block;
+  color: var(--brass);
+  font-size: 22px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.playerQuote {
+  margin-top: 16px;
+  font-family: var(--font-old-standard), serif;
+  font-style: italic;
+  font-size: 20px;
+  line-height: 1.6;
+  color: var(--paper);
+  border-left: 3px solid var(--rust);
+  padding-left: 14px;
 }
 
 .sectionHeader {
@@ -359,7 +454,8 @@
   }
 
   .heroInner,
-  .storyInner {
+  .storyInner,
+  .playerProfileInner {
     grid-template-columns: 1fr;
   }
 }
@@ -371,11 +467,20 @@
 
   .lineupSection,
   .story,
+  .playerProfileSection,
   .hero {
     padding: 56px 16px;
   }
 
   .grid {
     grid-template-columns: 1fr;
+  }
+
+  .playerStatsRow {
+    grid-template-columns: 1fr;
+  }
+
+  .playerQuote {
+    font-size: 18px;
   }
 }

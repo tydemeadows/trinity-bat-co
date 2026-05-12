@@ -716,6 +716,98 @@
   padding-left: 18px;
 }
 
+.playerProfileSection {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 100px 24px 40px;
+}
+
+.playerProfileInner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 56px;
+  align-items: center;
+}
+
+.playerProfileImageCard {
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  box-shadow: 10px 10px 0 var(--rust);
+}
+
+.playerProfileImageWrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-bottom: 2px solid var(--ink);
+}
+
+.playerProfileImage {
+  object-fit: cover;
+}
+
+.playerProfileBadge {
+  font-family: var(--font-bebas), sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.22em;
+  color: var(--paper);
+  background: var(--ink);
+  padding: 14px 18px;
+  text-transform: uppercase;
+}
+
+.playerProfileContent {
+  border-left: 1px solid var(--line-warm);
+  padding-left: 32px;
+}
+
+.playerProfileBody {
+  font-family: var(--font-old-standard), serif;
+  color: var(--paper-dark);
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 24px;
+}
+
+.playerStatsRow {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.playerStat {
+  background: var(--canvas-2);
+  border: 1px solid var(--line-warm);
+  padding: 12px 10px;
+  text-align: center;
+  font-family: var(--font-bebas), sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.15em;
+  color: var(--paper);
+  text-transform: uppercase;
+}
+
+.playerStat span {
+  display: block;
+  color: var(--brass);
+  font-size: 24px;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.playerProfileQuote {
+  margin: 0;
+  border-left: 3px solid var(--rust);
+  padding-left: 18px;
+  font-family: var(--font-old-standard), serif;
+  font-style: italic;
+  font-size: 22px;
+  color: var(--paper);
+  line-height: 1.6;
+}
+
 .profileSection,
 .customSection,
 .reviewsSection {
@@ -1041,6 +1133,7 @@
   }
 
   .storyInner,
+  .playerProfileInner,
   .profileGrid,
   .specsInner,
   .customGrid,
@@ -1049,11 +1142,21 @@
   }
 
   .storySection,
+  .playerProfileSection,
   .profileSection,
   .specsSection,
   .customSection,
   .reviewsSection {
     padding: 64px 20px;
+  }
+
+  .playerProfileContent {
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .playerStatsRow {
+    grid-template-columns: 1fr;
   }
 
   .reviewsSummary {
